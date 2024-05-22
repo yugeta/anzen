@@ -1,0 +1,88 @@
+.sds-card{
+  --color-title:#b0cae7;
+
+  width:300px;
+  display:inline-block;
+  margin:10px;
+  background-color:white;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.5);
+}
+.sds-card .drug_name{
+  padding:10px;
+  text-align:center;
+  font-size:1.5rem;
+  background-color:var(--color-title);
+  color:black;
+}
+.sds-card .health,
+.sds-card .ghs,
+.sds-card .protective{
+  display:grid;
+  gap:10px;
+  padding:2px 6px;
+}
+.sds-card .health{
+  margin-top:10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.sds-card .ghs{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.sds-card .protective{
+  margin-bottom:10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.sds-card .health img,
+.sds-card .ghs img,
+.sds-card .protective img{
+  max-width:100%;
+  object-fit:contain;
+}
+.sds-card .health > *{
+  position:relative;
+}
+.sds-card .health > *[data-status='1']{
+  background-color:red;
+}
+.sds-card .health > *[data-status='2']{
+  background-color:orange;
+}
+.sds-card .health > *[data-status='3']{
+  background-color:yellow;
+}
+.sds-card .health > *[data-status='4']{
+  background-color:gray;
+}
+.sds-card .health > *[data-status='9']{
+  background-color:white;
+}
+.sds-card .health > *[data-status='0']{
+  background-color:#ddd;
+}
+.sds-card .health > *[data-status='0']::before{
+  content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgOTYgOTYwIDk2MCIgd2lkdGg9IjQ4Ij48cGF0aCBkPSJNNDMxIDcyNnExLTcyIDE2LjUtMTA1dDU4LjUtNzJxNDItMzggNjQuNS03MC41VDU5MyA0MDlxMC00NS0zMC03NXQtODQtMzBxLTUyIDAtODAgMjkuNVQzNTggMzk1bC04NC0zN3EyMi01OSA3NC41LTEwMC41VDQ3OSAyMTZxMTAwIDAgMTU0IDU1LjVUNjg3IDQwNXEwIDQ4LTIwLjUgODdUNjAxIDU3NHEtNDkgNDctNTkgNzJ0LTExIDgwSDQzMVptNDggMjUwcS0yOSAwLTQ5LjUtMjAuNVQ0MDkgOTA2cTAtMjkgMjAuNS00OS41VDQ3OSA4MzZxMjkgMCA0OS41IDIwLjVUNTQ5IDkwNnEwIDI5LTIwLjUgNDkuNVQ0NzkgOTc2WiIvPjwvc3ZnPg==);
+  display: block;
+  width: 50px;
+  height: 50px;
+  opacity: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  filter: invert() drop-shadow(2px 2px 4px rgba(0,0,0,0.5));
+}
+.sds-card .ghs > *[data-status='0']{
+  opacity:0.3;
+}
+.sds-card .ghs > *[data-status='1']{
+  opacity:1.0;
+}
+.sds-card .protective > *[data-status='0']{
+  opacity:0.3;
+}
+.sds-card .protective > *[data-status='1']{
+  opacity:1.0;
+}
+
+

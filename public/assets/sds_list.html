@@ -1,0 +1,260 @@
+<link rel='stylesheet' href='css/sds_create_lists.css' />
+<script type='module' src='js/sds_list/main.js'></script>
+
+<section class="blue">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 center"><img src="img/aboutsds.png" alt="SDSピクトグラムロゴ" class="circle3 fade3" style="width: 150px; height: auto;"></div>
+      <div class="col-md-6">
+        <h2>SDSピクトグラム</h2>
+      </div>
+      <div class="col-md-3"></div>
+      <div class="col-12">
+        <p>学生実習で使用頻度の高い薬品を中心に、厚生労働省に掲載されているSDS(安全データシート)をピクトグラム化しました。実験時、薬品を使用する前に、SDSピクトグラムをパッと見て危険度を認識しておくと、緊急時にも速やかに対応できます。今後、さらにピクトグラム表示で見られる薬品を増やしていくことを検討しております。
+        </p>
+      </div>
+
+      <div class='sds_cards'></div>
+      <!-- <div class="col-md-4">
+        <details>
+          <summary class="bluebar">アセトン</summary>
+          <img src="img/sds/1.jpg" alt="SDSピクトグラム" class="column-img">
+        </details>
+      </div>
+      <div class="col-md-4">
+        <details>
+          <summary class="bluebar">エタノール</summary>
+          <img src="img/sds/2.jpg" alt="SDSピクトグラム" class="column-img">
+        </details>
+      </div>
+      <div class="col-md-4">
+        <details>
+          <summary class="bluebar">塩酸</summary>
+          <img src="img/sds/3.jpg" alt="SDSピクトグラム" class="column-img">
+        </details>
+      </div>
+      <div class="col-md-4">
+        <details>
+          <summary class="bluebar">塩化カリウム</summary>
+          <img src="img/sds/4.jpg" alt="SDSピクトグラム" class="column-img">
+        </details>
+      </div>
+      <div class="col-md-4">
+        <details>
+          <summary class="bluebar">硫酸</summary>
+          <img src="img/sds/5.jpg" alt="SDSピクトグラム" class="column-img">
+        </details>
+      </div>
+      <div class="col-md-4">
+        <details>
+          <summary class="bluebar">硝酸</summary>
+          <img src="img/sds/6.jpg" alt="SDSピクトグラム" class="column-img">
+        </details>
+      </div>
+      <div class="col-md-4">
+        <details>
+          <summary class="bluebar">フッ化水素</summary>
+          <img src="img/sds/7.jpg" alt="SDSピクトグラム" class="column-img">
+        </details>
+      </div>
+      <div class="col-md-4">
+        <details>
+          <summary class="bluebar">水酸化ナトリウム</summary>
+          <img src="img/sds/8.jpg" alt="SDSピクトグラム" class="column-img">
+        </details>
+      </div>
+      <div class="col-md-4">
+        <details>
+          <summary class="bluebar">水酸化カリウム</summary>
+          <img src="img/sds/9.jpg" alt="SDSピクトグラム" class="column-img">
+        </details>
+      </div>
+      <div class="col-md-4">
+        <details>
+          <summary class="bluebar">メタノール</summary>
+          <img src="img/sds/10.jpg" alt="SDSピクトグラム" class="column-img">
+        </details>
+      </div>
+      <div class="col-md-4">
+        <details>
+          <summary class="bluebar">水酸化カリウム</summary>
+          <img src="img/sds/11.jpg" alt="SDSピクトグラム" class="column-img">
+        </details>
+      </div>
+      <div class="col-md-4">
+        <details>
+          <summary class="bluebar">酢酸</summary>
+          <img src="img/sds/12.jpg" alt="SDSピクトグラム" class="column-img">
+        </details>
+      </div>
+      <div class="col-md-4">
+        <details>
+          <summary class="bluebar">サリチル酸</summary>
+          <img src="img/sds/13.jpg" alt="SDSピクトグラム" class="column-img">
+        </details>
+      </div>
+      <div class="col-md-4">
+        <details>
+          <summary class="bluebar">フェノール</summary>
+          <img src="img/sds/14.jpg" alt="SDSピクトグラム" class="column-img">
+        </details>
+      </div>
+      <div class="col-md-4">
+        <details>
+          <summary class="bluebar">ナトリウム</summary>
+          <img src="img/sds/15.jpg" alt="SDSピクトグラム" class="column-img">
+        </details>
+      </div>
+      <div class="col-md-4">
+        <details>
+          <summary class="bluebar">亜鉛</summary>
+          <img src="img/sds/16.jpg" alt="SDSピクトグラム" class="column-img">
+        </details>
+      </div> -->
+
+      <div class="col-12">
+        <h4>危険度の色分け</h4>
+      </div>
+      <div class="col-md-4">
+        <img src="img/column/kikendo.png" alt="危険度の色分け" class="column-img">
+      </div>
+      <div class="col-md-8">
+        <p>危険度の高いものから赤、オレンジ、黄色、グレーと段階的に示し、最も危険度が低いものを白で色分けしております。白色だからといって「安全」「危険性０」というわけではなく、「有害のおそれがある」ということに気を付けて下さい。</p>
+      </div>
+      <div class="col-12">
+        <h4>SDSピクトグラムの意味</h4>
+      </div>
+  <div class="col-3 col-md-2 col-lg-1">
+    <img src="img/sds/drink_p.png" alt="SDSピクトグラム" class="sds-img">
+  </div>  
+  <div class="col-9 col-md-4 col-lg-5 d-flex align-items-center">
+   <p>急性毒性（経口）</p>
+  </div> 
+  <div class="col-3 col-md-2 col-lg-1">
+    <img src="img/sds/acute_p.png" alt="SDSピクトグラム" class="sds-img">
+  </div>  
+  <div class="col-9 col-md-4 col-lg-5 d-flex align-items-center">
+   <p>急性毒性（経皮）</p>
+  </div> 
+  <div class="col-3 col-md-2 col-lg-1">
+    <img src="img/sds/corrosion.png" alt="SDSピクトグラム" class="sds-img">
+  </div>  
+  <div class="col-9 col-md-4 col-lg-5 d-flex align-items-center">
+   <p>皮膚腐食性・刺激性</p>
+  </div> 
+  <div class="col-3 col-md-2 col-lg-1">
+    <img src="img/sds/allergy.png" alt="SDSピクトグラム" class="sds-img">
+  </div>  
+  <div class="col-9 col-md-4 col-lg-5 d-flex align-items-center">
+   <p>皮膚感作性（アレルギー）</p>
+  </div> 
+  <div class="col-3 col-md-2 col-lg-1">
+    <img src="img/sds/eye_p.png" alt="SDSピクトグラム" class="sds-img">
+  </div>  
+  <div class="col-9 col-md-4 col-lg-5 d-flex align-items-center">
+   <p>眼に対する重篤な損傷・眼刺激性</p>
+  </div> 
+  <div class="col-3 col-md-2 col-lg-1">
+    <img src="img/sds/viscera_p.png" alt="SDSピクトグラム" class="sds-img">
+  </div>  
+  <div class="col-9 col-md-4 col-lg-5 d-flex align-items-center">
+   <p>特定標的臓器・全身毒性</p>
+  </div> 
+  <div class="col-3 col-md-2 col-lg-1">
+    <img src="img/sds/fetus_p.png" alt="SDSピクトグラム" class="sds-img">
+  </div>  
+  <div class="col-9 col-md-4 col-lg-5 d-flex align-items-center">
+   <p>胎児への悪影響</p>
+  </div> 
+  <div class="col-3 col-md-2 col-lg-1">
+    <img src="img/sds/testis_p.png" alt="SDSピクトグラム" class="sds-img">
+  </div>  
+  <div class="col-9 col-md-4 col-lg-5 d-flex align-items-center">
+   <p>精巣の障害</p>
+  </div> 
+  <div class="col-3 col-md-2 col-lg-1">
+    <img src="img/sds/dna_p.png" alt="SDSピクトグラム" class="sds-img">
+  </div>  
+  <div class="col-9 col-md-4 col-lg-5 d-flex align-items-center">
+   <p>生殖細胞変異原性・遺伝性疾患のおそれ
+    </p>
+  </div> 
+  <div class="col-3 col-md-2 col-lg-1">
+    <img src="img/sds/cancer.png" alt="SDSピクトグラム" class="sds-img">
+  </div>  
+  <div class="col-9 col-md-4 col-lg-5 d-flex align-items-center">
+   <p>発癌性</p>
+  </div> 
+  <div class="col-3 col-md-2 col-lg-1">
+    <img src="img/sds/fish_p.png" alt="SDSピクトグラム" class="sds-img">
+  </div>  
+  <div class="col-9 col-md-4 col-lg-5 d-flex align-items-center">
+   <p>水性生物に有害</p>
+  </div> 
+  <div class="col-12">
+    <h4>GHSマークの意味</h4>
+  </div>
+  <div class="col-3 col-md-2 col-lg-1">
+    <img src="img/ghs/ghs1.png" alt="GHS絵表示" class="sds-img">
+  </div>  
+  <div class="col-9 col-md-4 col-lg-5 d-flex align-items-center">
+   <p>可燃性・引火性のもの<br>
+    特に引火性の高いものは静電気にも注意</p>
+  </div> 
+  <div class="col-3 col-md-2 col-lg-1">
+    <img src="img/ghs/ghs2.png" alt="GHS絵表示" class="sds-img">
+  </div>  
+  <div class="col-9 col-md-4 col-lg-5 d-flex align-items-center">
+   <p>支燃性・酸化性ガス<br>
+    酸化性液体<br>
+    酸化性固体</p>
+  </div> 
+  <div class="col-3 col-md-2 col-lg-1">
+    <img src="img/ghs/ghs3.png" alt="GHS絵表示" class="sds-img">
+  </div>  
+  <div class="col-9 col-md-4 col-lg-5 d-flex align-items-center">
+   <p>火薬類<br>
+    自己反応性化学品<br>
+    有機過酸化物</p>
+  </div> 
+  <div class="col-3 col-md-2 col-lg-1">
+    <img src="img/ghs/ghs4.png" alt="GHS絵表示" class="sds-img">
+  </div>  
+  <div class="col-9 col-md-4 col-lg-5 d-flex align-items-center">
+   <p>皮膚腐食性・刺激性、眼刺激性</p>
+  </div> 
+  <div class="col-3 col-md-2 col-lg-1">
+    <img src="img/ghs/ghs5.png" alt="GHS絵表示" class="sds-img">
+  </div>  
+  <div class="col-9 col-md-4 col-lg-5 d-flex align-items-center">
+   <p>高圧ガス</p>
+  </div> 
+  <div class="col-3 col-md-2 col-lg-1">
+    <img src="img/ghs/ghs6.png" alt="GHS絵表示" class="sds-img">
+  </div>  
+  <div class="col-9 col-md-4 col-lg-5 d-flex align-items-center">
+   <p>急性毒性<br>
+    （飲み込んだ時や皮膚についた際、即効性の毒性）</p>
+  </div> 
+  <div class="col-3 col-md-2 col-lg-1">
+    <img src="img/ghs/ghs7.png" alt="GHS絵表示" class="sds-img">
+  </div>  
+  <div class="col-9 col-md-4 col-lg-5 d-flex align-items-center">
+   <p>危険・有害性は低いが、リスクがある場合に表示</p>
+  </div> 
+  <div class="col-3 col-md-2 col-lg-1">
+    <img src="img/ghs/ghs8.png" alt="GHS絵表示" class="sds-img">
+  </div>  
+  <div class="col-9 col-md-4 col-lg-5 d-flex align-items-center">
+   <p>水性生物に対する有害性</p>
+  </div>
+  <div class="col-3 col-md-2 col-lg-1">
+    <img src="img/ghs/ghs9.png" alt="GHS絵表示" class="sds-img">
+  </div>  
+  <div class="col-9 col-md-4 col-lg-5 d-flex align-items-center">
+   <p>健康有害性<br>
+    （生殖毒性、発がん性、特定臓器への障害）</p>
+  </div>
+  </div>
+</div>
+</section>

@@ -1,0 +1,71 @@
+<link href="css/quiz.css" rel="stylesheet">
+<script src='js/quiz.js'></script>
+
+<section class="green">
+  <div class="container">
+      <div>
+        <div class="row">
+          <div class="col-md-3 center"><img src="img/quiz.png" alt="クイズロゴ" class="circle1 fade1" style="width: 150px; height: auto;"></div>
+          <div class="col-md-6">
+              <h2>四択クイズ</h2>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+
+        <div>
+          <div class='slide-area' id='question_top'>
+            <div class='content-area'>
+              <div class="col-12">
+                  <p class="explanation">
+                    このクイズは、全部で１００問あり、甲種危険物取り扱い試験の過去問を参考に作成しています。
+                    選択肢のボタンをクリックしてください。<br>
+                    正解のものは<span style="background-color:#1a720d; color:#fff;">緑色</span>、不正解のものは<span style="background-color:red; color:#fff;">赤色</span>になります。
+                    間違えた場合も、正解に辿り着くまで、他の選択肢を何度もクリックできます。<br>
+                    アプリは、問題がランダムに出題され、マルバツが表示されますが、WEBにランダム出題機能はありません。<br>
+                    ヒント：第一類 (酸化性固体) 第二類 (可燃性固体) 第三類(自然発火性及び禁水性物質) 第四類 (引火性液体) 第五類 (自己反応性物質) 第六類 (酸化性液体)
+                  </p>
+              </div>
+              <div>
+                <button class='green next'>クイズを始める →</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6 center">
+              <img src="img/beaker.png" alt="挿絵" class="beaker">
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<div class='template'>
+  <div class='question-temp'>
+    <div class='content-area'>
+      <div class="question">
+        <p class='question-label'><span class='num'>{{question_number}}.</span><span class='title'>{{question}}</span></p>
+      </div>
+      <div class="answers">{{answer_lists}}</div>
+    </div>
+  </div>
+  <div class='finish-temp'>
+    <div class='content-area finish'>
+      <p >終了 !!</p>
+      <div>正解率 : {{correct_counts}} / {{question_counts}}</div>
+  </div>
+  </div>
+</div>
+
+<div class='correct-area'>
+  <div class="correct-data">
+    <div class="correct-mark" data-status=''></div>
+    <p class='correct-label'>解答</p>
+    <div class='answer'></div>
+    <div class="comment"></div>
+    <div><button class='green next'>NEXT →</button></div>
+  </div>
+</div>

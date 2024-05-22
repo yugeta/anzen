@@ -1,0 +1,9 @@
+
+body[data-login='true'] #login{
+  display:none;
+}
+
+body:not([data-login='true']) #logout{
+  display:none;
+}
+

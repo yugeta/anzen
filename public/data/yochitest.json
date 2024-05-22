@@ -1,0 +1,37 @@
+{
+  "options" : {
+
+  },
+  "lists" : [
+    {
+      "question_text"  : "実験中、溶液を測り取るため、ホールピペットに安全ピペッターを取り付けています。\n事故につながる危険があると予想される箇所を三点指摘してください。",
+      "question_image" : "img/test/test1_1.png",
+      "point_counts"   : 3,
+      "answer_image"   : "img/test/test1_2.png",
+      "answer_text"    : "危険1.保護眼鏡をつけていません。\n危険2.ゴム手袋を着用していません。\n危険3.ホールピペットを持つ手が下すぎて割れる危険があります。",
+      "button_message2" : "正しい実験方法",
+      "comment_image"  : "img/test/test1_3.png",
+      "comment_text"   : "薬品を使用していなくても実験中は、保護眼鏡とゴム手袋を常に着用するようにしましょう。\nホールピペットを持つ位置は、安全ピペッターをつける位置の近くを持つようにしましょう。"
+    },
+    {
+      "question_text"  : "イラストを見て危険を予測してね！",
+      "question_image" : "img/test/test2_1.png",
+      "point_counts"   : 3,
+      "answer_image"   : "img/test/test2_2.png",
+      "answer_text"    : "危険1.左の男性が保護眼鏡をつけていません。\n危険2.左の男性がゴム手袋を着用していません。\n危険3.滴定溶液を目線より高い位置から注いでおり、顔にかかる危険があります。",
+      "button_message2" : "正しい実験方法",
+      "comment_image"  : "img/test/test2_3.png",
+      "comment_text"   : "実験をしている人でなくとも、そばにいる場合は、安全を過信せずに保護眼鏡と手袋の着用をしましょう。\nまた、滴定溶液を注ぐ際は、テーブルから実験器具をおろして、目線より低い位置で行うようにしましょう。"
+    },
+    {
+      "question_text"  : "イラストを見て危険を予測してね！",
+      "question_image" : "img/test/test3_1.png",
+      "point_counts"   : 3,
+      "answer_image"   : "img/test/test3_2.png",
+      "answer_text"    : "危険1.保護眼鏡をつけていません。\n危険2.ゴム手袋を着用していません。\n危険3.漏斗はころがりやすいため、落ちて割れる危険があります。",
+      "button_message2" : "正しい実験方法",
+      "comment_image"  : "img/test/test3_3.png",
+      "comment_text"   : "実験が終わった後でも、薬品が実験器具に付着している可能性があるため、保護眼鏡とゴム手袋を常に着用するようにしましょう。\n漏斗は転がらないように伏せて置くことを推奨します。"
+    }
+  ]
+}

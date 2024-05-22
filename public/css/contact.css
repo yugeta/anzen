@@ -1,0 +1,178 @@
+
+form{
+  display:block;
+  width:90%;
+  max-width:800px;
+  border-radius:8px;
+  /* box-shadow:4px 4px 20px rgba(0,0,0,0.3); */
+  margin:10px auto 50px;
+  padding: 0 20px;
+}
+
+form > *{
+  /* margin:20px 10px; */
+  padding:20px 0;
+}
+form > * + *{
+  border-top:1px solid rgb(200,200,200);
+}
+
+form .group{
+  display:flex;
+}
+form .group > *{
+  margin:0 10px;
+}
+
+
+form .group .require{
+  width:70px;
+}
+form .group .require::before{
+  content:"";
+  display:inline-block;
+  width:60px;
+  padding:5px;
+  border-radius:4px;
+  color:white;
+  text-align:center;
+  font-size:0.8rem;
+}
+form .group[data-require="1"] .require::before{
+  content:"必須";
+  background-color:red;
+}
+form .group[data-require="0"] .require::before{
+  content:"任意";
+  background-color:#337ab7;
+}
+
+form .group .caption{
+  display:inline-block;
+  width:120px;
+  padding:5px 0;
+  white-space:pre-wrap;
+  word-break:break-all;
+  font-size:0.9rem;
+}
+form .group .form{
+  width:calc(100% - 120px - 60px);
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  font-size:0;
+}
+form .group .form *{
+  width:100%;
+  font-size:16px;
+}
+
+form .group .form .inputs{
+  display:flex;
+}
+form .group .form .inputs > *{
+  display:inline-block;
+  --size-input-margin:4px;
+  margin:0 var(--size-input-margin);
+}
+
+form .group .form *::placeholder{
+  font-size:0.9rem;
+  color:rgb(180,180,180)
+}
+form .group .form input[type="text"],
+form .group .form select,
+form .group .form textarea{
+  -webkit-appearance : none;
+  appearance : none;
+  
+  border:1px solid rgb(180,180,180);
+  border-radius:4px;
+  padding:5px;
+}
+form .group .form textarea{
+  height:150px;
+  resize:vertical;
+}
+
+form .submit-area{
+  text-align:center;
+}
+form .submit-area button{
+  display:inline-block;
+  padding:10px 20px;
+  background-color:#337ab7;
+  border:1px solid #2e6da4;
+  color:white;
+  border-radius:4px;
+  cursor:pointer;
+}
+form .submit-area button:hover{
+  background-color:#2e6da4;
+}
+
+form .group .form .caution{
+  display:none;
+  color:red;
+  font-size:0.9rem;
+  margin-top:5px;
+  padding:0 5px;
+}
+form .group[data-caution='1'] .form .caution{
+  display:block;
+}
+
+
+
+.contact .summary{
+  width:100%;
+  max-width:500px;
+  margin:20px auto 50px;
+  border:1px dashed rgb(200,200,200);
+  padding:20px;
+}
+
+
+
+@media (max-width: 599px){
+  form{
+    padding:0 40px;
+  }
+  form .group{
+    display:block;
+  }
+  form .group > *{
+    width:100%!important;
+    margin:0;
+  }
+  form .group .caption{
+    white-space:normal;
+  }
+}
+
+@media (max-width: 400px){
+  form{
+    padding:0 20px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 700px){
+  form .group{
+    --size-require-width:60px;
+    display:block;
+  }
+  form .group .require,
+  form .group .caption{
+    display:inline-block;
+    margin-bottom:10px;
+  }
+  form .group .require{
+    width:var(--size-require-width);
+  }
+  form .group .caption{
+    width:calc(90% - var(--size-require-width));
+    white-space:normal;
+  }
+  form .group .form{
+    width:calc(100% - 20px);
+  }
+}

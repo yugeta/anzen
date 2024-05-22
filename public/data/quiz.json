@@ -1,0 +1,73 @@
+{
+  "options" : {
+
+  },
+  "lists" : [
+    {
+      "question" : "液体の危険物は？",
+      "answers" : [
+        {
+          "name":"一類と二類",
+          "correct" : false
+        },
+        {
+          "name":"四類と六類",
+          "correct" : true
+        },
+        {
+          "name":"三類と五類",
+          "correct" : false
+        },
+        {
+          "name":"四類と五類",
+          "correct" : false
+        }
+      ],
+      "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
+    },
+    {
+      "question" : "その物質自体は燃焼しないが、他の物質を強く酸化せさせる性質を持つ固体は？",
+      "answers" : [
+        {
+          "name":"一類",
+          "correct" : true
+        },
+        {
+          "name":"二類",
+          "correct" : false
+        },
+        {
+          "name":"三類",
+          "correct" : false
+        },
+        {
+          "name":"四類",
+          "correct" : false
+        }
+      ],
+      "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
+    },
+    {
+      "question" : "その物質自体は燃焼しない液体であるが、混在する他の可燃物の燃焼を促進する性質があるものは？",
+      "answers" : [
+        {
+          "name":"三類",
+          "correct" : false
+        },
+        {
+          "name":"四類",
+          "correct" : false
+        },
+        {
+          "name":"五類",
+          "correct" : true
+        },
+        {
+          "name":"六類",
+          "correct" : false
+        }
+      ],
+      "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
+    }
+  ]
+}

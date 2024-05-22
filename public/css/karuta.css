@@ -1,0 +1,67 @@
+main{
+  min-height:100vh;
+  background-color:#F0F9FF;
+  border:1px solid transparent;
+}
+.karuta-lists{
+  width:90%;
+  max-width:1000px;
+  margin:10px auto;
+  
+  display:grid;
+  gap:10px;
+  grid-template-columns:200px 200px 1fr;
+  /* grid-auto-rows:auto; */
+}
+.karuta-lists img{
+  max-width:95%;
+}
+.karuta-lists .a,
+.karuta-lists .b{
+  text-align:center;
+}
+.karuta-lists .c{
+  white-space:pre-wrap;
+  word-break:break-all;
+  font-size:0.8em;
+  padding:10px;
+}
+
+@media (max-width:768px){
+  .karuta-lists{
+    grid-template-columns:1fr 1fr;
+    /* grid-template-rows:1fr 1fr; */
+    /* grid-column: 1 / 3; */
+  }
+  /* .karuta-lists .c{
+    font-size:0.7em;
+  } */
+  .karuta-lists img .a,
+  .karuta-lists img .b{
+    max-height:100%;
+  }
+  .karuta-lists img{
+    max-width:200px;
+  }
+  .karuta-lists .c{
+    /* grid-template-rows:1fr 1fr; */
+    grid-column: 1 / 3;
+    padding:10px 20px;
+    margin-bottom:20px;
+    border-bottom:1px solid #ccc;
+  }
+}
+@media (max-width:500px){
+  .karuta-lists img{
+    max-width:100%;
+  }
+}
+
+@media print{
+  header,footer{
+    display:none;
+  }
+  main{
+    background-color:white;
+  }
+}

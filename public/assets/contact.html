@@ -1,0 +1,56 @@
+<link href="css/contact.css" rel="stylesheet">
+
+<section class="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 center"><!--img src="img/book.png" alt="コラムロゴ" class="circle4 fade4" style="width: 150px; height: auto;"--></div>
+      <div class="col-md-6">
+        <h2>お問い合わせ</h2>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+  <div class="contact">
+  
+    <form method="post" name="contact" action="https://docs.google.com/forms/d/e/1FAIpQLScoEE_PxQsMvoH9TM8Tg99WtqozsfcHyt-1LFbF00BZ2TU2Fw/formResponse" target="complete" onsubmit="window.submitted=true">
+      <input type='hidden' name='entry.298577827' placeholder='ua'>
+      <input type='hidden' name='entry.852309949' placeholder='ip'>
+
+      <div class="group" data-require="1">
+        <div class="require"></div>
+        <span class="caption">名前</span>
+        <div class="form">
+          <div class="inputs">
+            <input type="text" name="entry.1394006012" placeholder="名前" required>
+          </div>
+        </div>
+      </div>
+  
+      <div class="group" data-require="1">
+        <div class="require"></div>
+        <span class="caption">メールアドレス</span>
+        <div class="form">
+          <input type="text" name="entry.325954365" placeholder="yourname@example.com" required>
+        </div>
+      </div>
+  
+      <div class="group" data-require="1">
+        <div class="require"></div>
+        <span class="caption">お問い合わせ内容</span>
+        <div class="form">
+          <textarea name="entry.465691426" placeholder="お問合せ内容を記入ください。" required></textarea>
+        </div>
+      </div>
+  
+      <div class="submit-area">
+        <button class="submit-button" type="submit">送信する</button>
+      </div>
+  
+    </form>
+    <script type="text/javascript">
+      window.submitted = false;
+      document.querySelector(`form [placeholder='ua']`).value = navigator.userAgent
+    </script>
+    <iframe id="complete" name="complete" style="display:none;" onload="if(window.submitted){location.href='thanks.html'}"></iframe>
+  </div>
+</section>

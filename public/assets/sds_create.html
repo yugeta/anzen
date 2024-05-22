@@ -1,0 +1,331 @@
+<link rel='stylesheet' href='css/sds_create.css' />
+<script type='module' src='js/sds_create/main.js'></script>
+
+<form name='create' method='post'>
+<section class="blue">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 center"><img src="img/aboutsds.png" alt="SDSピクトグラムロゴ" class="circle3 fade3" style="width: 150px; height: auto;"></div>
+      <div class="col-md-6">
+        <h2>SDSピクトグラム</h2>
+        <div class='sub-title'>自分で作る! オリジナルSDS</div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+
+    <div class='inputs'>
+      <section class='basic'>
+        <h3>基本情報</h3>
+        <div class='information'>
+          <div class='input-group'>
+            <p class='label'>薬品名</p>
+            <input type='text' name='drug_name' value='' placeholder='フェノール' />
+          </div>
+          <div class='input-group'>
+            <p class='label'>物理的状態</p>
+            <input type='text' name='physical_state' value='' placeholder='無色〜黄色又はピンク色の固体'/>
+          </div>
+          <div class='input-group'>
+            <p class='label'>使ってはならない消火剤</p>
+            <input type='' name='not_use_extinguishing' value='' placeholder='棒状注水' />
+          </div>
+
+
+          <div class='input-group'>
+            <p class='label'>緊急連絡先 会社名</p>
+            <input type='text' name='company' value='' placeholder='会社名'/>
+          </div>
+          <div class='input-group'>
+            <p class='label'>緊急連絡先 電話番号</p>
+            <input type='text' name='tel' value='' placeholder='電話番号'/>
+          </div>
+          <div class='input-group'>
+            <p class='label'>SDS作成者</p>
+            <input type='' name='writer_email' value='' placeholder='名前' readonly/>
+          </div>
+
+          <div class='textarea-group'>
+            <p class='label'>保管条件</p>
+            <textarea type='' name='save_condition' value='' placeholder='冷所、換気の良い場所で保管すること。
+酸化剤から離して保管する。
+施錠して保管すること。'></textarea>
+          </div>
+
+          <div class='textarea-group'>
+            <p class='label'>その他注意事項</p>
+            <textarea type='' name='etc' value='' placeholder=''></textarea>
+          </div>
+        </div>
+      </section>
+
+      <section class='health'>
+        <h3>健康に対する有害性</h3>
+        <div class='flex'>
+          <table class='table-2'>
+            <tr>
+              <th>急性毒性（経口）<br>飲み込むと有害</th>
+              <td data-type='9'>
+                <input type='hidden' name='hazardous_1' value='9'>
+                <img src='img/sds/icon/001.png'/>
+              </td>
+            </tr>
+            <tr>
+              <th>皮膚腐食性・刺激性</th>
+              <td data-type='9'>
+                <input type='hidden' name='hazardous_2' value='9'>
+                <img src='img/sds/icon/002.png'/>
+              </td>
+            </tr>
+            <tr>
+              <th>眼に対する重篤な損傷・眼刺激性</th>
+              <td data-type='9'>
+                <input type='hidden' name='hazardous_3' value='9'>
+                <img src='img/sds/icon/003.png'/>
+              </td>
+            </tr>
+            <tr>
+              <th>生殖への悪影響</th>
+              <td data-type='9'>
+                <input type='hidden' name='hazardous_4' value='9'>
+                <img src='img/sds/icon/004.png'/>
+              </td>
+            </tr>
+            <tr>
+              <th>発がん性</th>
+              <td data-type='9'>
+                <input type='hidden' name='hazardous_5' value='9'>
+                <img src='img/sds/icon/005.png'/>
+              </td>
+            </tr>
+          </table>
+          <table class='table-2'>
+            <tr>
+              <th>急性毒性（経皮）<br>皮膚に接触すると有毒</th>
+              <td data-type='9'>
+                <input type='hidden' name='hazardous_6' value='9'>
+                <img src='img/sds/icon/006.png'/>
+              </td>
+            </tr>
+            <tr>
+              <th>皮膚感作性（アレルギー）</th>
+              <td data-type='9'>
+                <input type='hidden' name='hazardous_7' value='9'>
+                <img src='img/sds/icon/007.png'/>
+              </td>
+            </tr>
+            <tr>
+              <th>特定標的臓器・全身毒性</th>
+              <td data-type='9'>
+                <input type='hidden' name='hazardous_8' value='9'>
+                <img src='img/sds/icon/008.png'/>
+              </td>
+            </tr>
+            <tr>
+              <th>胎児への悪影響</th>
+              <td data-type='9'>
+                <input type='hidden' name='hazardous_9' value='9'>
+                <img src='img/sds/icon/009.png'/>
+              </td>
+            </tr>
+            <tr>
+              <th>生殖細胞変異原性・遺伝性疾患のおそれ</th>
+              <td data-type='9'>
+                <input type='hidden' name='hazardous_10' value='9'>
+                <img src='img/sds/icon/010.png'/>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h3>環境に対する有害性</h3>
+        <div class='flex'>
+          <table class='table-2'>
+            <tr>
+              <th>水生環境急性有害性</th>
+              <td data-type='9'>
+                <input type='hidden' name='environment_1' value='9'>
+                <img src='img/sds/icon/011.png'/>
+              </td>
+            </tr>
+          </table>
+          <table class='table-2'>
+            <tr>
+              <th>水生環境慢性有害性</th>
+              <td data-type='9'>
+                <input type='hidden' name='environment_2' value='9'>
+                <img src='img/sds/icon/012.png'/>
+              </td>
+            </tr>
+          </table>
+        </dib>
+      </section>
+
+      <section class='ghs'>
+        <h3>GHS</h3>
+        <div class='lists'>
+          <label class='item' data-status='active'>
+            <input type='checkbox' name='ghs_1'>
+            <div class='icon'><img src='img/ghs/ghs1.png'></div>
+            <div class='text'><b>【炎】</b>
+可燃性/引火性ガス
+引火性液体
+可燃性固体
+自己反応性物質化学品
+特に引火性の高いものは静電気にも注意</div>
+          </label>
+
+          <label class='item'>
+            <input type='checkbox' name='ghs_2'>
+            <div class='icon'><img src='img/ghs/ghs2.png'></div>
+            <div class='text'><b>【円上の炎】</b>
+支燃性/酸化性ガス
+酸化性液体・固体</div>
+          </label>
+
+          <label class='item'>
+            <input type='checkbox' name='ghs_3'>
+            <div class='icon'><img src='img/ghs/ghs3.png'></div>
+            <div class='text'><b>【爆弾の爆発】</b>
+自己反応性化学品
+有機過酸化物</div>
+          </label>
+
+          <label class='item'>
+            <input type='checkbox' name='ghs_4'>
+            <div class='icon'><img src='img/ghs/ghs4.png'></div>
+            <div class='text'><b>【腐食性】</b>
+金属腐食性物質
+皮膚腐食性
+目に対する重大な損傷性</div>
+          </label>
+
+          <label class='item'>
+            <input type='checkbox' name='ghs_5'>
+            <div class='icon'><img src='img/ghs/ghs5.png'></div>
+            <div class='text'><b>【ガスボンベ】</b>
+高圧ガス</div>
+          </label>
+
+          <label class='item'>
+            <input type='checkbox' name='ghs_6'>
+            <div class='icon'><img src='img/ghs/ghs6.png'></div>
+            <div class='text'><b>【急性毒性】</b>
+（飲み込んだ時や皮膚についた際、
+即効性の毒性）
+（区分1~3）</div>
+          </label>
+
+          <label class='item'>
+            <input type='checkbox' name='ghs_7'>
+            <div class='icon'><img src='img/ghs/ghs7.png'></div>
+            <div class='text'><b>【感嘆符】</b>
+急性毒性（区分4）
+皮膚刺激性（区分2）
+眼刺激性（区分2A）
+皮膚感作性
+特定標的臓器毒性（区分3）
+危険・有害性は低いが、リスクがある場合に表示</div>
+          </label>
+
+          <label class='item'>
+            <input type='checkbox' name='ghs_8'>
+            <div class='icon'><img src='img/ghs/ghs8.png'></div>
+            <div class='text'><b>【環境】</b>
+水性環境有害性</div>
+          </label>
+
+          <label class='item'>
+            <input type='checkbox' name='ghs_9'>
+            <div class='icon'><img src='img/ghs/ghs9.png'></div>
+            <div class='text'><b>【健康有害性】</b>
+呼吸器感作性
+生殖細胞変異原性
+発癌性
+生殖毒性
+特定標的臓器毒性（区分1,2）
+吸引性呼吸有害性</div>
+          </label>
+
+        </div>
+      </section>
+
+
+      <section class='protective'>
+        <h3>保護具</h3>
+        <div class='lists'>
+          <label class='item'>
+            <input type='checkbox' name='protective_1'>
+            <img class='icon' src='img/protective/protective1.png'>
+            <p class='name'>手袋</p>
+          </label>
+          <label class='item'>
+            <input type='checkbox' name='protective_2'>
+            <img class='icon' src='img/protective/protective2.png'>
+            <p class='name'>ゴーグル</p>
+          </label>
+          <label class='item'>
+            <input type='checkbox' name='protective_3'>
+            <img class='icon' src='img/protective/protective3.png'>
+            <p class='name'>保護服</p>
+          </label>
+          <label class='item'>
+            <input type='checkbox' name='protective_4'>
+            <img class='icon' src='img/protective/protective4.png'>
+            <p class='name'>保護靴</p>
+          </label>
+          <label class='item'>
+            <input type='checkbox' name='protective_5'>
+            <img class='icon' src='img/protective/protective5.png'>
+            <p class='name'>保護マスク</p>
+          </label>
+        </div>
+      </section>
+
+      
+      <!-- <section class='etc'>
+        <h3>その他事項</h3>
+        
+      </section> -->
+    </div>
+
+    <div class='buttons'>
+      <button class='btn-save' type='button'>オリジナルSDSを保存</button>
+      <!-- <button class='btn-share'>SDS画像を研究室で共有</button> -->
+    </div>
+  </div>
+</section>
+</form>
+
+<form name='post_data' method='post' action='data.php'>
+  <input type='hidden' name='mode' value='save'>
+  <input type='hidden' name='id' value=''>
+  <input type='hidden' name='json' value=''></input>
+</form>
+
+<div class='division-lists'>
+  <ul>
+    <li><label class='color-1'>
+      <input type='radio' name='type' value='1'> 区分1(ABC)
+      <div class='color'></div>
+    </label></li>
+    <li><label class='color-2'>
+      <input type='radio' name='type' value='2'> 区分2
+      <div class='color'></div>
+    </label></li>
+    <li><label class='color-3'>
+      <input type='radio' name='type' value='3'> 区分3
+      <div class='color'></div>
+    </label></li>
+    <li><label class='color-4'>
+      <input type='radio' name='type' value='4'> 区分4
+      <div class='color'></div>
+    </label></li>
+    <li><label class='color-5'>
+      <input type='radio' name='type' value='9'> 分類対象外
+      <div class='color'></div>
+    </label></li>
+    <li><label class='color-6'>
+      <input type='radio' name='type' value='0'> 分類できない
+      <div class='color'></div>
+    </label></li>
+  </ul>
+</div>
