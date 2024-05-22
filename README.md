@@ -1,4 +1,4 @@
-# AnzenQuiz
+# Anzen
 
 - github
 
