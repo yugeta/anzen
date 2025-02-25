@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <title>安全衛生アプリ</title>
+  <meta name="keywords" content="安全衛生,科学安全,スマホアプリ開発,東京大学工学部技術職員の奨励研究,危険予知,SDS,SDSピクトグラム,安全データシート,教育系漫画,教育系スマホアプリ">
+  <meta name="description"
+    content="安全に科学実験を行うための知識を身につけられるスマホアプリを開発しました。現在、アプリの内容を全てWEBで公開中です。安全データシート(SDS)をピクトグラムで表現しており、感覚的に瞬時に危険を認識できます。">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+  <header>
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href=""><img src="img/logo.png" alt="化学安全ロゴ" class="header-logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <!-- <li class="nav-item">
+                  <a class="nav-link" href="#2">機能</a>
+                </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="quiz.html">4択クイズ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="yochitest.html">危険予知テスト</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sds.html">SDSピクトグラム</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="column.html">コラム</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"
+                  href="mailto:a.sakai@sogo.t.u-tokyo.ac.jp?subject=%E5%AE%89%E5%85%A8%E8%A1%9B%E7%94%9F%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;body=%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0A%E6%89%80%E5%B1%9E%EF%BC%9A%0A%E8%BF%94%E4%BF%A1%E7%94%A8%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%EF%BC%9A%0A%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E5%86%85%E5%AE%B9%EF%BC%9A">お問い合わせ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="yellow">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 center"><img src="img/pencil.png" alt="ペンシルロゴ" class="circle2 fade2" style="width: 150px; height: auto;"></div>
+        <div class="col-md-6">
+          <h2>危険予知テスト</h2>
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-12">
+          <p class="explanation">
+            実験中のイラストを見て、危険だと思うところを予想してみてください。<br>
+            問題→回答→解説の順にボタンをタップしてください。画像と説明文（問題文）が表示されます。
+          </p>
+        </div>
+        <div class="col-12">
+          <p>Q1<br>
+            問題1のボタンをクリックしてください。<br>
+            実験中、溶液を測り取るため、ホールピペットに安全ピペッターを取り付けています。<br>
+            事故につながる危険があると予想される箇所を三点指摘してください。</p>
+        </div>
+        <div class="col-md-4">
+          <div class="cp_linetab center">
+            <input id="tab-1" name="tabs" type="checkbox" /><label for="tab-1">問題1</label>
+            <div class="cp_linetab-content">
+              <div class="center">
+                <img src="img/test/test1_1.png" alt="危険予知問題1" class="test-img">
+              </div>
+              <p>イラストを見て危険を予測してね！</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cp_linetab center">
+            <input id="tab-2" name="tabs" type="checkbox" /> <label for="tab-2">回答1</label>
+            <div class="cp_linetab-content">
+              <div class="center">
+                <img src="img/test/test1_2.png" alt="危険予知問題1" class="test-img">
+              </div>
+              <p style="text-align: left;">危険1.保護眼鏡をつけていません。<br>
+                危険2.ゴム手袋を着用していません。<br>
+                危険3.ホールピペットを持つ手が下すぎて割れる危険があります。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cp_linetab center">
+            <input id="tab-3" name="tabs" type="checkbox" /> <label for="tab-3">解説1</label>
+            <div class="cp_linetab-content">
+              <div class="center">
+                <img src="img/test/test1_3.png" alt="危険予知問題1" class="test-img">
+              </div>
+              <p style="text-align: left;">薬品を使用していなくても実験中は、保護眼鏡とゴム手袋を常に着用するようにしましょう。<br>
+                ホールピペットを持つ位置は、安全ピペッターをつける位置の近くを持つようにしましょう。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <p>Q2<br>
+            問題2のボタンをクリックしてください。<br>
+            滴定実験の最中、右の男性は滴定溶液が少なくなったため、継ぎ足しています。左の男性は、滴定の目盛の数値を記入しているところです。<br>
+            事故につながる危険があると予想される箇所を三点指摘してください。</p>
+        </div>
+        <div class="col-md-4">
+          <div class="cp_linetab center">
+            <input id="tab-4" name="tabs" type="checkbox" /><label for="tab-4">問題2</label>
+            <div class="cp_linetab-content">
+              <div class="center">
+                <img src="img/test/test2_1.png" alt="危険予知問題2" class="test-img">
+              </div>
+              <p>イラストを見て危険を予測してね！</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cp_linetab center">
+            <input id="tab-5" name="tabs" type="checkbox" /> <label for="tab-5">回答2</label>
+            <div class="cp_linetab-content">
+              <div class="center">
+                <img src="img/test/test2_2.png" alt="危険予知問題2" class="test-img">
+                <p style="text-align: left;">危険1.左の男性が保護眼鏡をつけていません。<br>
+                  危険2.左の男性がゴム手袋を着用していません。<br>
+                  危険3.滴定溶液を目線より高い位置から注いでおり、顔にかかる危険があります。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cp_linetab center">
+            <input id="tab-6" name="tabs" type="checkbox" /> <label for="tab-6">解説2</label>
+            <div class="cp_linetab-content">
+              <div class="center">
+                <img src="img/test/test2_3.png" alt="危険予知問題2" class="test-img">
+                <p style="text-align: left;">
+                  実験をしている人でなくとも、そばにいる場合は、安全を過信せずに保護眼鏡と手袋の着用をしましょう。また、滴定溶液を注ぐ際は、テーブルから実験器具をおろして、目線より低い位置で行うようにしましょう。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <p>Q3<br>
+            問題3のボタンをクリックしてください。<br>
+            実験が終了し、使用した実験器具を洗浄しているところです。<br>
+            事故につながる危険があると予想される箇所を三点指摘してください。</p>
+        </div>
+        <div class="col-md-4">
+          <div class="cp_linetab center">
+            <input id="tab-7" name="tabs" type="checkbox" /><label for="tab-7">問題3</label>
+            <div class="cp_linetab-content">
+              <div class="center">
+                <img src="img/test/test3_1.png" alt="危険予知問題3" class="test-img">
+              </div>
+              <p>イラストを見て危険を予測してね！</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cp_linetab center">
+            <input id="tab-8" name="tabs" type="checkbox" /> <label for="tab-8">回答3</label>
+            <div class="cp_linetab-content">
+              <div class="center">
+                <img src="img/test/test3_2.png" alt="危険予知問題3" class="test-img">
+              </div>
+              <p style="text-align: left;">危険1.保護眼鏡をつけていません。<br>
+                危険2.ゴム手袋を着用していません。<br>
+                危険3.漏斗はころがりやすいため、落ちて割れる危険があります。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cp_linetab center">
+            <input id="tab-9" name="tabs" type="checkbox" /> <label for="tab-9">解説3</label>
+            <div class="cp_linetab-content">
+              <div class="center">
+                <img src="img/test/test3_3.png" alt="危険予知問題3" class="test-img">
+              </div>
+              <p style="text-align: left;">実験が終わった後でも、薬品が実験器具に付着している可能性があるため、保護眼鏡とゴム手袋を常に着用するようにしましょう。<br>
+                漏斗は転がらないように伏せて置くことを推奨します。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <p>Q4<br>
+            問題4のボタンをクリックしてください。<br>
+            分液漏斗を使用しています。<br>
+            事故につながる危険があると予想される箇所を三点指摘してください。</p>
+        </div>
+        <div class="col-md-4">
+          <div class="cp_linetab center">
+            <input id="tab-10" name="tabs" type="checkbox" /><label for="tab-10">問題4</label>
+            <div class="cp_linetab-content">
+              <div class="center">
+                <img src="img/test/test4_1.png" alt="危険予知問題4" class="test-img">
+              </div>
+              <p>イラストを見て危険を予測してね！</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cp_linetab center">
+            <input id="tab-11" name="tabs" type="checkbox" /> <label for="tab-11">回答4</label>
+            <div class="cp_linetab-content">
+              <div class="center">
+                <img src="img/test/test4_2.png" alt="危険予知問題4" class="test-img">
+              </div>
+              <p style="text-align: left;">危険1.保護眼鏡をつけていません。<br>
+                危険2.ゴム手袋を着用していません。<br>
+                危険3.分液漏斗を横向きにしたまま空気穴を開けると、圧力の差で溶液が噴射されます。溶液も減り、他人にかかる危険もあります。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cp_linetab center">
+            <input id="tab-12" name="tabs" type="checkbox" /> <label for="tab-12">解説4</label>
+            <div class="cp_linetab-content">
+              <div class="center">
+                <img src="img/test/test4_3.png" alt="危険予知問題4" class="test-img">
+              </div>
+              <p style="text-align: left;">保護眼鏡とゴム手袋は必須です。<br>
+                分液漏斗は常に立てて振り、立てたまま、こまめに、ゆっくり空気穴を開けましょう。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <p>Q5<br>
+            問題5のボタンをクリックしてください。<br>
+            事故につながる危険があると予想される箇所を三点指摘してください。</p>
+        </div>
+        <div class="col-md-4">
+          <div class="cp_linetab center">
+            <input id="tab-13" name="tabs" type="checkbox" /><label for="tab-13">問題5</label>
+            <div class="cp_linetab-content">
+              <div class="center">
+                <img src="img/test/test5_1.png" alt="危険予知問題5" class="test-img">
+              </div>
+              <p>イラストを見て危険を予測してね！</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cp_linetab center">
+            <input id="tab-14" name="tabs" type="checkbox" /> <label for="tab-14">回答5</label>
+            <div class="cp_linetab-content">
+              <div class="center">
+                <img src="img/test/test5_2.png" alt="危険予知問題5" class="test-img">
+              </div>
+              <p style="text-align: left;">ひび割れた実験器具を使うと、溶液の漏れや怪我の危険があります。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cp_linetab center">
+            <input id="tab-15" name="tabs" type="checkbox" /> <label for="tab-15">解説5</label>
+            <div class="cp_linetab-content">
+              <div class="center">
+                <img src="img/test/test5_3.png" alt="危険予知問題5" class="test-img">
+              </div>
+              <p style="text-align: left;">試験管やビーカーなど比較的安価なガラス器具が割れた場合は新しいもの買い変えましょう。星が入ったナスフラスコは徐々に加熱し徐々に冷やすと修理することもできます。高価なガラス器具の修理は専門の機関に依頼しましょう。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <p>Q6<br>
+            問題6のボタンをクリックしてください。<br>
+            揮発性の溶液を使用しており、ドラフトで実験しています。<br>
+            事故につながる危険があると予想される箇所を三点指摘してください。</p>
+        </div>
+        <div class="col-md-4">
+          <div class="cp_linetab center">
+            <input id="tab-16" name="tabs" type="checkbox" /><label for="tab-16">問題6</label>
+            <div class="cp_linetab-content">
+              <div class="center">
+                <img src="img/test/test6_1.png" alt="危険予知問題6" class="test-img">
+              </div>
+              <p>イラストを見て危険を予測してね！</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cp_linetab center">
+            <input id="tab-17" name="tabs" type="checkbox" /> <label for="tab-17">回答6</label>
+            <div class="cp_linetab-content">
+              <div class="center">
+                <img src="img/test/test6_2.png" alt="危険予知問題6" class="test-img">
+              </div>
+              <p style="text-align: left;">手元が見にくいからといってドラフト内に頭を入れると揮発した溶液を吸い込んでしまい大変危険です。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cp_linetab center">
+            <input id="tab-18" name="tabs" type="checkbox" /> <label for="tab-18">解説6</label>
+            <div class="cp_linetab-content">
+              <div class="center">
+                <img src="img/test/test6_3.png" alt="危険予知問題6" class="test-img">
+              </div>
+              <p style="text-align: left;">ドラフトは風速4m/s以上で内側に吸い込む力が必要です。
+                扉を開けすぎると風速が規定以下になってしましますので正しくドラフトを使用しましょう。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-6 center">
+          <img src="img/beaker.png" alt="挿絵" class="beaker">
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-6 center">
+          <a href="index.html" class="footer-link">HOME</a>
+        </div>
+        <div class="col-sm-3 col-6 center">
+          <a href="mailto:a.sakai@sogo.t.u-tokyo.ac.jp?subject=%E5%AE%89%E5%85%A8%E8%A1%9B%E7%94%9F%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;body=%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0A%E6%89%80%E5%B1%9E%EF%BC%9A%0A%E8%BF%94%E4%BF%A1%E7%94%A8%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%EF%BC%9A%0A%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E5%86%85%E5%AE%B9%EF%BC%9A"
+            class="footer-link">お問い合わせ</a>
+        </div>
+        <div class="col-sm-3 col-6 center">
+          <a href="creater.html" class="footer-link">運営者情報</a>
+        </div>
+        <div class="col-sm-3 col-6 center">
+          <a href="privacy.html" class="footer-link">プライバシーポリシー</a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center copy">
+      <img src="img/logo.png" alt="化学安全ロゴ" class="header-logo">
+      © 2021 安全衛生スマホアプリ
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+.control-area{
+  /* background-color:red; */
+  grid-row: 1 / 3;
+}
+.control-area p,
+.control-area a{
+  margin:0;
+  text-align:center;
+  display:block;
+}
+
+.control-area{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  overflow:hidden;
+}
+
+
+.control-area *{
+  color:white;
+}
+
+.control-area .hearts{
+  display:flex;
+  gap:5px;
+  align-items:center;
+  justify-content:center;
+  padding:10px;
+  width:100%;
+}
+
+.control-area .hearts svg{
+  width:20%;
+  max-width:30px;
+  max-height:30px;
+}
+
+.control-area .hachi{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 10px;
+}
+.control-area .hachi img{
+  width:40%;
+  max-width:60px;
+}
+
+.control-area .track{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 10px;
+}
+.control-area .track img{
+  width:60%;
+  max-width:100px;
+}
+
+@media(max-width:768px){
+  .control-area .hearts svg{
+    max-height:20px;
+  }
+}
