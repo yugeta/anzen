@@ -6,66 +6,220 @@
     {
       "question" : "液体の危険物は？",
       "answers" : [
-        {
-          "name":"一類と二類",
-          "correct" : false
-        },
-        {
-          "name":"四類と六類",
-          "correct" : true
-        },
-        {
-          "name":"三類と五類",
-          "correct" : false
-        },
-        {
-          "name":"四類と五類",
-          "correct" : false
-        }
+        { "name":"一類と二類", "correct" : false },
+        { "name":"四類と六類", "correct" : true },
+        { "name":"三類と五類", "correct" : false },
+        { "name":"四類と五類", "correct" : false }
       ],
       "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
     },
     {
       "question" : "その物質自体は燃焼しないが、他の物質を強く酸化せさせる性質を持つ固体は？",
       "answers" : [
-        {
-          "name":"一類",
-          "correct" : true
-        },
-        {
-          "name":"二類",
-          "correct" : false
-        },
-        {
-          "name":"三類",
-          "correct" : false
-        },
-        {
-          "name":"四類",
-          "correct" : false
-        }
+        { "name":"一類", "correct" : true },
+        { "name":"二類", "correct" : false },
+        { "name":"三類", "correct" : false },
+        { "name":"四類", "correct" : false }
       ],
       "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
     },
     {
       "question" : "その物質自体は燃焼しない液体であるが、混在する他の可燃物の燃焼を促進する性質があるものは？",
       "answers" : [
-        {
-          "name":"三類",
-          "correct" : false
-        },
-        {
-          "name":"四類",
-          "correct" : false
-        },
-        {
-          "name":"五類",
-          "correct" : true
-        },
-        {
-          "name":"六類",
-          "correct" : false
-        }
+        { "name":"三類", "correct" : false },
+        { "name":"四類", "correct" : false },
+        { "name":"五類", "correct" : true },
+        { "name":"六類", "correct" : false }
+      ],
+      "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
+    },
+    {
+      "question" : "塩素酸塩類は第何類？",
+      "answers" : [
+        { "name":"一類", "correct" : true },
+        { "name":"二類", "correct" : false },
+        { "name":"三類", "correct" : false },
+        { "name":"四類", "correct" : false }
+      ],
+      "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
+    },
+    {
+      "question" : "過塩素酸は第何類？",
+      "answers" : [
+        { "name":"三類", "correct" : false },
+        { "name":"四類", "correct" : false },
+        { "name":"五類", "correct" : false },
+        { "name":"六類", "correct" : true }
+      ],
+      "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
+    },
+    {
+      "question" : "赤リンは第何類？",
+      "answers" : [
+        { "name":"第一類 (酸化性固体)", "correct" : false },
+        { "name":"第二類 (可燃性固体)", "correct" : true },
+        { "name":"第三類(自然発火性及び禁水性物質)", "correct" : false },
+        { "name":"第四類 (引火性液体)", "correct" : false }
+      ],
+      "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
+    },
+    {
+      "question" : "硝酸は第何類？",
+      "answers" : [
+        { "name":"第一類 (酸化性固体)", "correct" : false },
+        { "name":"第三類(自然発火性及び禁水性物質)", "correct" : false },
+        { "name":"第五類 (自己反応性物質)<", "correct" : false },
+        { "name":"第六類 (酸化性液体)", "correct" : true }
+      ],
+      "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
+    },
+    {
+      "question" : "三フッ化水素は第何類？",
+      "answers" : [
+        { "name":"第一類 (酸化性固体)", "correct" : false },
+        { "name":"第三類(自然発火性及び禁水性物質)", "correct" : false },
+        { "name":"第五類 (自己反応性物質)", "correct" : false },
+        { "name":"第六類 (酸化性液体)", "correct" : true }
+      ],
+      "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
+    },
+    {
+      "question" : "黄りんは第何類？",
+      "answers" : [
+        { "name":"第一類 (酸化性固体)", "correct" : false },
+        { "name":"第二類 (可燃性固体)", "correct" : false },
+        { "name":"第三類(自然発火性及び禁水性物質)", "correct" : true },
+        { "name":"第四類 (引火性液体)", "correct" : false }
+      ],
+      "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
+    },
+    {
+      "question" : "第6類 酸化性液体の指定数量は？",
+      "answers" : [
+        { "name":"100kg", "correct" : false },
+        { "name":"500kg", "correct" : true },
+        { "name":"1000kg", "correct" : false },
+        { "name":"3000kg", "correct" : false }
+      ],
+      "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
+    },
+    {
+      "question" : "法令上、指定数量の倍数に関わらず予防規定を定めなければならない製造所は？",
+      "answers" : [
+        { "name":"屋外貯蔵所", "correct" : false },
+        { "name":"屋外タンク貯蔵所", "correct" : false },
+        { "name":"屋内給油取扱所", "correct" : true },
+        { "name":"地下タンク貯蔵所", "correct" : false }
+      ],
+      "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
+    },
+    {
+      "question" : "表面燃焼しないものは?",
+      "answers" : [
+        { "name":"木材", "correct" : true },
+        { "name":"木炭", "correct" : false },
+        { "name":"コークス", "correct" : false },
+        { "name":"金属粉", "correct" : false }
+      ],
+      "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
+    },
+    {
+      "question" : "分解燃焼しないものは?",
+      "answers" : [
+        { "name":"ガソリン", "correct" : true },
+        { "name":"紙", "correct" : false },
+        { "name":"プラスチック", "correct" : false },
+        { "name":"石炭", "correct" : false }
+      ],
+      "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
+    },
+    {
+      "question" : "自己燃焼しないものは?",
+      "answers" : [
+        { "name":"ガソリン", "correct" : true },
+        { "name":"ニトロセルロース", "correct" : false },
+        { "name":"セルロイド", "correct" : false },
+        { "name":"乙5危険物", "correct" : false }
+      ],
+      "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
+    },
+    {
+      "question" : "可燃性液体表面の蒸気濃度が燃焼範囲の下限値の液温は?",
+      "answers" : [
+        { "name":"熱源温度", "correct" : false },
+        { "name":"発火点", "correct" : true },
+        { "name":"引火点", "correct" : false },
+        { "name":"燃焼点", "correct" : false }
+      ],
+      "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
+    },
+    {
+      "question" : "可燃物を空気中で加熱した場合、他から点火されなくても自ら発火する最低温度は?",
+      "answers" : [
+        { "name":"熱源温度", "correct" : false },
+        { "name":"発火点", "correct" : true },
+        { "name":"引火点", "correct" : false },
+        { "name":"燃焼点", "correct" : false }
+      ],
+      "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
+    },
+    {
+      "question" : "可燃性液体が連続的に燃焼するときの液体の最低温度は?",
+      "answers" : [
+        { "name":"熱源温度", "correct" : false },
+        { "name":"発火点", "correct" : false },
+        { "name":"引火点", "correct" : false },
+        { "name":"燃焼点", "correct" : true }
+      ],
+      "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
+    },
+    {
+      "question" : "可燃性液体が連続的に燃焼するときの液体の最低温度は?",
+      "answers" : [
+        { "name":"熱源温度", "correct" : false },
+        { "name":"発火点", "correct" : false },
+        { "name":"引火点", "correct" : false },
+        { "name":"燃焼点", "correct" : true }
+      ],
+      "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
+    },
+    {
+      "question" : "保護液貯蔵しなくて良いものは?",
+      "answers" : [
+        { "name":"カリウム", "correct" : false },
+        { "name":"ナトリウム", "correct" : false },
+        { "name":"黄りん", "correct" : false },
+        { "name":"赤りん", "correct" : true }
+      ],
+      "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
+    },
+    {
+      "question" : "全ての第3類の危険物の消火に適しているのは？",
+      "answers" : [
+        { "name":"噴霧注水", "correct" : false },
+        { "name":"二酸化炭素", "correct" : false },
+        { "name":"泡", "correct" : false },
+        { "name":"乾燥砂", "correct" : true }
+      ],
+      "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
+    },
+    {
+      "question" : "全ての第3類の危険物の消火に適しているのは？",
+      "answers" : [
+        { "name":"泡消火剤", "correct" : false },
+        { "name":"二酸化炭素消火材", "correct" : true },
+        { "name":"注水", "correct" : false },
+        { "name":"乾燥砂", "correct" : false }
+      ],
+      "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
+    },
+    {
+      "question" : "鉄粉の消火方法に最適なものは?",
+      "answers" : [
+        { "name":"泡消火剤", "correct" : false },
+        { "name":"二酸化炭素消火材", "correct" : false },
+        { "name":"注水", "correct" : false },
+        { "name":"乾燥砂", "correct" : true }
       ],
       "comment" : "解答コメント\n改行する場合は、改行コードをjsonに書き込んでください。"
     }

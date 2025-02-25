@@ -1,0 +1,22 @@
+#game{
+  width:var(--w);
+  height:var(--h);
+  max-width:100%;
+  max-height:100%;
+  background-color:black;
+  
+  display:grid;
+  grid-template-columns:20% 80%;
+  grid-template-rows:80% 20%;
+}
+
+@media (orientation: landscape){
+}
+@media (orientation: portrait){
+  #game{
+    width:var(--w);
+    height:var(--h);
+    max-width:100vh;
+    max-height:100vw;
+  }
+}

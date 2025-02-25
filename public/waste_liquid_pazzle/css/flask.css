@@ -1,0 +1,7 @@
+.flask-area{
+  background-image:url(../img/lab_3.jpg);
+  /* background-image:url(../img/lab_0.png); */
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:relative;
+}

@@ -1,7 +1,8 @@
+import { SvgImport } from "./svg_import.js"
 
 class Main{
   constructor(){
-    console.log(1)
+    new SvgImport()
   }
 }
 

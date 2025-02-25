@@ -32,7 +32,46 @@
   <meta name="twitter:image" content="https://example.com" />
   <meta property="image_src" content="https://example.com" />
 </head>
-<body data-status="articles" aria-hidden="false">
-  <main id="game"></main>
+<body>
+  <main id="game">
+    <div class="control-area">
+      <div class="hearts">
+        <svg src="img/heart_off.svg"></svg>
+        <svg src="img/heart_on.svg"></svg>
+        <svg src="img/heart_on.svg"></svg>
+      </div>
+
+      <div class="hachi">
+        <img src="img/hachi.png" />
+      </div>
+
+      <div class="time">
+        <p>Time: <span>00:00</span></p>
+      </div>
+
+      <div class="score">
+        <p>Score: <span>0</span></p>
+      </div>
+
+      <div class="rule">
+        <a href="img/rule.jpg" target="_blank">ルールシート</a>
+      </div>
+
+      <div class="track">
+        <img src="img/track.png" />
+      </div>
+    </div>
+
+    <div class="flask-area"></div>
+
+    <div class="tank-area">
+      <svg src="img/tank/c.svg" data-name="c"></svg>
+      <svg src="img/tank/k.svg" data-name="k"></svg>
+      <svg src="img/tank/j.svg" data-name="j"></svg>
+      <svg src="img/tank/h.svg" data-name="h"></svg>
+      <svg src="img/tank/d.svg" data-name="d"></svg>
+      <svg src="img/tank/e.svg" data-name="e"></svg>
+    </div>
+  </main>
 </body>
 </html>

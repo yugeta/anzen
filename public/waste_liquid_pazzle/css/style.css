@@ -1,9 +1,54 @@
-@import "stage.css";
+@import "game.css";
+@import "control.css";
+@import "tank.css";
+@import "flask.css";
 
-html,body{
-  margin:0;
-  padding:0;
+:root{
+  --w:1000px;
+  --h:600px;
+}
+
+html{
   width:100%;
   height:100%;
+  margin:0;
+  padding:0;
+  
   overflow:hidden;
+}
+body{
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+
+  overflow:hidden;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+@media (orientation: landscape){
+  body{
+    width:100%;
+    height:100%;
+    transform: rotate(0deg);
+  }
+}
+@media (orientation: portrait){
+  body{
+    width:100vh;
+    height:100vw;
+    transform: rotate(90deg);
+    transform-origin: 50vw;
+  }
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing  : border-box;
+     -moz-box-sizing  : border-box;
+       -o-box-sizing  : border-box;
+      -ms-box-sizing  : border-box;
+          box-sizing  : border-box;
 }
