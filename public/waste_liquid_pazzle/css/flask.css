@@ -5,3 +5,14 @@
   background-size:cover;
   position:relative;
 }
+
+.flask-area .flask{
+  --x:50%;
+  --y:50%;
+  width: 100px;
+  position:absolute;
+  top:var(--x);
+  left:var(--y);
+  transform:translate(-50%, -50%);
+  filter:drop-shadow(2px 2px 5px rgba(0,0,0,0.5));
+}
