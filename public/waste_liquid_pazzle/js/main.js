@@ -1,8 +1,10 @@
 import { SvgImport } from "./svg_import.js"
+import { Flask }     from "./flask.js"
 
 class Main{
   constructor(){
     new SvgImport()
+    new Flask()
   }
 }
 
