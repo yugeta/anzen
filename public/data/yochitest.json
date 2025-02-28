@@ -32,6 +32,16 @@
       "button_message2" : "正しい実験方法",
       "comment_image"  : "img/test/test3_3.png",
       "comment_text"   : "実験が終わった後でも、薬品が実験器具に付着している可能性があるため、保護眼鏡とゴム手袋を常に着用するようにしましょう。\n漏斗は転がらないように伏せて置くことを推奨します。"
+    },
+    {
+      "question_text"  : "イラストを見て危険を予測してね！",
+      "question_image" : "img/test/test4_1.png",
+      "point_counts"   : 3,
+      "answer_image"   : "img/test/test4_2.png",
+      "answer_text"    : "分液漏斗を使用しています。\n事故につながる危険があると予想される箇所を三点指摘してください。",
+      "button_message2" : "正しい実験方法",
+      "comment_image"  : "img/test/test4_3.png",
+      "comment_text"   : "危険1.保護眼鏡をつけていません。\n危険2.ゴム手袋を着用していません。\n危険3.分液漏斗を横向きにしたまま空気穴を開けると、圧力の差で溶液が噴射されます。溶液も減り、他人にかかる危険もあります。"
     }
   ]
 }
